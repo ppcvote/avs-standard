@@ -3,6 +3,7 @@
 > **The first open standard for measuring website discoverability by AI search engines.**
 
 [![Spec](https://img.shields.io/badge/spec-v1.0-blue)](spec/AVS-v1.0.md)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19410475.svg)](https://doi.org/10.5281/zenodo.19410475)
 [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-green)](https://creativecommons.org/licenses/by/4.0/)
 [![Reference Implementation](https://img.shields.io/badge/implementation-ultralab--scanners-purple)](https://github.com/ppcvote/ultralab-scanners)
 
@@ -85,9 +86,14 @@ We are conducting an empirical validation study:
 - Cited URLs scanned with AVS reference implementation
 - Correlation analysis between AVS scores and AI citation behavior
 
-**Preliminary finding**: Websites cited by AI search engines consistently score B or higher on AVS.
+**Key findings** (155 queries, 816 citations, 721 AVS scores):
+- Median AVS of cited websites: **77 (Grade B)**
+- 59.8% of cited sites scored B or above
+- Recommendation queries cite highest-AVS sites (mean **80.2**)
+- Local queries cite lowest-AVS sites (mean **60.0**)
+- SEO-AEO gap: mean SEO 80.6 vs mean AEO 64.5
 
-Results will be published as an arXiv preprint.
+**Paper**: [DOI: 10.5281/zenodo.19410475](https://doi.org/10.5281/zenodo.19410475)
 
 ## Comparison with Existing Standards
 
