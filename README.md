@@ -1,11 +1,32 @@
-# AI Visibility Score (AVS)
+# AI Application Security Standard (AASS)
 
-> **The first open standard for measuring website discoverability by AI search engines.**
+> **Open standard for evaluating AI security, visibility, and data protection. Like OWASP, but for the AI era.**
 
-[![Spec](https://img.shields.io/badge/spec-v1.0-blue)](spec/AVS-v1.0.md)
+[![AVS Spec](https://img.shields.io/badge/AVS-v1.0-blue)](spec/AVS-v1.0.md)
+[![AASS Spec](https://img.shields.io/badge/AASS-v1.0-red)](spec/AASS-v1.0.md)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19410475.svg)](https://doi.org/10.5281/zenodo.19410475)
 [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-green)](https://creativecommons.org/licenses/by/4.0/)
 [![Reference Implementation](https://img.shields.io/badge/implementation-ultralab--scanners-purple)](https://github.com/ppcvote/ultralab-scanners)
+
+---
+
+## What is AASS?
+
+**AI Application Security Standard (AASS)** evaluates three dimensions of AI readiness:
+
+| Dimension | Score | What it answers |
+|-----------|-------|----------------|
+| **AI Visibility (AVS)** | SEO + AEO + AAO | Can AI find and use your website? |
+| **Prompt Defense (PDS)** | 12 attack vectors | Is your AI system hardened? |
+| **Data Protection (ADP)** | PII detection | Are you leaking sensitive data to AI? |
+
+```
+AI Trust Score = AVS × 0.30 + PDS × 0.35 + ADP × 0.35
+```
+
+One number. 0-100. Tells you how ready your organization is for the AI era.
+
+Full specification: **[AASS v1.0](spec/AASS-v1.0.md)**
 
 ---
 
