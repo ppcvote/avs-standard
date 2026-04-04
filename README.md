@@ -95,6 +95,20 @@ We are conducting an empirical validation study:
 
 **Paper**: [DOI: 10.5281/zenodo.19410475](https://doi.org/10.5281/zenodo.19410475)
 
+## Community Flywheel
+
+Every scan on [UltraProbe](https://ultralab.tw/probe) anonymously contributes to the community benchmark:
+
+```
+You scan your website → Anonymous score recorded (domain TLD + AVS/SEO/AEO only)
+→ Community averages update → Everyone sees industry benchmarks
+→ More scans = more accurate benchmarks = more value for everyone
+```
+
+No URLs are stored. No HTML is stored. Only: domain TLD, AVS score, SEO score, AEO score, country, timestamp.
+
+This is the flywheel: **your scan makes everyone's score more meaningful.**
+
 ## Comparison with Existing Standards
 
 | Standard | What it measures | Scope | Open | Free |
