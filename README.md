@@ -60,21 +60,22 @@ The entire analysis is **deterministic** (pure HTML parsing, no LLM calls), comp
 
 ### Scan any website (free)
 
-**Web UI**: [ultralab.tw/probe](https://ultralab.tw/probe)
+**Web UI**: [ultralab.tw/en/probe](https://ultralab.tw/en/probe)
 
 ### Use the reference implementation
 
 ```bash
-npm install @ultralab/scanners
+git clone https://github.com/ppcvote/ultralab-scanners.git
+cd ultralab-scanners && npm install
 ```
 
 ```typescript
-import { runSeoScan, runAeoScan } from '@ultralab/scanners'
+import { runSeoScan, runAeoScan } from './src/seo-scanner'
 
 const html = await fetch('https://example.com').then(r => r.text())
 const seo = runSeoScan(html, 'https://example.com')
 const aeo = runAeoScan(html, 'https://example.com')
-const avs = Math.round(seo.score * 0.5 + aeo.score * 0.5)
+const avs = Math.round(seo.score * 0.35 + aeo.score * 0.35 + aao.score * 0.30)
 
 console.log(`AVS: ${avs}/100`) // AVS: 47/100
 ```
@@ -158,9 +159,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 - **Specification**: [AVS v1.0](spec/AVS-v1.0.md)
 - **Reference Implementation**: [ultralab-scanners](https://github.com/ppcvote/ultralab-scanners)
-- **Live Scanner**: [ultralab.tw/probe](https://ultralab.tw/probe)
-- **Blog**: [ultralab.tw/blog](https://ultralab.tw/blog)
-- **Discord**: [discord.gg/ultralab](https://discord.gg/ultralab)
+- **Live Scanner**: [ultralab.tw/en/probe](https://ultralab.tw/en/probe)
+- **Blog**: [ultralab.tw/en/blog](https://ultralab.tw/en/blog)
+- **Discord**: [discord.gg/ewS4rWXvWk](https://discord.gg/ewS4rWXvWk)
 
 ## License
 
@@ -169,4 +170,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ---
 
-*AVS is an open standard initiated by [Ultra Lab](https://ultralab.tw). It is not affiliated with Google, OpenAI, Anthropic, or any other AI company.*
+*AVS is an open standard initiated by [Ultra Lab](https://ultralab.tw/en/). It is not affiliated with Google, OpenAI, Anthropic, or any other AI company.*
